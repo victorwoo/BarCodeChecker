@@ -36,11 +36,10 @@
 
         private void btnDataSelect_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog {
-                Filter = "文本文件（*.txt）|*.txt",
-                RestoreDirectory = false,
-                FilterIndex = 1
-            };
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "文本文件（*.txt）|*.txt";
+            dialog.RestoreDirectory = false;
+            dialog.FilterIndex = 1;
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 this.textBox1.Text = dialog.FileName;
@@ -100,12 +99,11 @@
                 MessageBox.Show("右侧空白区不能为空！", "操作提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            SaveFileDialog dialog = new SaveFileDialog {
-                Filter = "Excel文件(*.xls)|*.xls",
-                RestoreDirectory = false,
-                FilterIndex = 0,
-                FileName = this.sample.SerialNumber
-            };
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Excel文件(*.xls)|*.xls";
+            dialog.RestoreDirectory = false;
+            dialog.FilterIndex = 0;
+            dialog.FileName = this.sample.SerialNumber;
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 try

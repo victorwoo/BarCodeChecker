@@ -35,10 +35,14 @@
         [EditorBrowsable(EditorBrowsableState.Advanced)]
         internal static CultureInfo Culture
         {
-            get => 
-                resourceCulture;
-            set => 
-                (resourceCulture = value);
+            get
+            {
+                return resourceCulture;
+            }
+            set
+            {
+                resourceCulture = value;
+            }
         }
     }
 }

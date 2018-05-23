@@ -31,7 +31,9 @@
                 if (this.dataGridView1.SelectedRows.Count > 0)
                 {
                     this.sample = this.setBarcodeSampleValue(this.dataGridView1);
-                    new frmPrint(this.sample) { Text = "检验数据——" + this.sample.SerialNumber }.ShowDialog();
+                    frmPrint print = new frmPrint(this.sample);
+                    print.Text = "检验数据——" + this.sample.SerialNumber;
+                    print.ShowDialog();
                 }
                 else
                 {
@@ -66,11 +68,10 @@
 
         private void btnFileSelect_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dialog = new OpenFileDialog {
-                Filter = "Excel文件(*.xls,*.xlsx)|*.xls;*.xlsx",
-                RestoreDirectory = false,
-                FilterIndex = 1
-            };
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Excel文件(*.xls,*.xlsx)|*.xls;*.xlsx";
+            dialog.RestoreDirectory = false;
+            dialog.FilterIndex = 1;
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 this.textBox1.Text = dialog.FileName;

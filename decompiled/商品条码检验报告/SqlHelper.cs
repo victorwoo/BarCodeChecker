@@ -138,8 +138,10 @@
             return dataTable;
         }
 
-        private static SqlConnection GetConnection(DatabaseConn dbconn) => 
-            new SqlConnection(ConfigurationManager.ConnectionStrings[dbconn.ToString()].ConnectionString);
+        private static SqlConnection GetConnection(DatabaseConn dbconn)
+        {
+            return new SqlConnection(ConfigurationManager.ConnectionStrings[dbconn.ToString()].ConnectionString);
+        }
 
         public static bool IsExists(DatabaseConn dbconn, string sqlstring, SqlParameter param)
         {

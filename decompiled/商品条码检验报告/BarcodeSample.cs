@@ -20,106 +20,158 @@
 
         public string SerialNumber
         {
-            get => 
-                this._serialNumber;
-            set => 
-                (this._serialNumber = value);
+            get
+            {
+                return this._serialNumber;
+            }
+            set
+            {
+                this._serialNumber = value;
+            }
         }
 
         public string BarCodeNumber
         {
-            get => 
-                this._barCodeNumber;
-            set => 
-                (this._barCodeNumber = value);
+            get
+            {
+                return this._barCodeNumber;
+            }
+            set
+            {
+                this._barCodeNumber = value;
+            }
         }
 
         public string SampleName
         {
-            get => 
-                this._sampleName;
-            set => 
-                (this._sampleName = value);
+            get
+            {
+                return this._sampleName;
+            }
+            set
+            {
+                this._sampleName = value;
+            }
         }
 
         public string PrintFormat
         {
-            get => 
-                this._printFormat;
-            set => 
-                (this._printFormat = value);
+            get
+            {
+                return this._printFormat;
+            }
+            set
+            {
+                this._printFormat = value;
+            }
         }
 
         public string BarcodeType
         {
-            get => 
-                this._barcodeType;
-            set => 
-                (this._barcodeType = value);
+            get
+            {
+                return this._barcodeType;
+            }
+            set
+            {
+                this._barcodeType = value;
+            }
         }
 
         public string CustomerName
         {
-            get => 
-                this._customerName;
-            set => 
-                (this._customerName = value);
+            get
+            {
+                return this._customerName;
+            }
+            set
+            {
+                this._customerName = value;
+            }
         }
 
         public string CustomerContactPersoner
         {
-            get => 
-                this._customerContactPersoner;
-            set => 
-                (this._customerContactPersoner = value);
+            get
+            {
+                return this._customerContactPersoner;
+            }
+            set
+            {
+                this._customerContactPersoner = value;
+            }
         }
 
         public string CustomerContactNumber
         {
-            get => 
-                this._customerContactNumber;
-            set => 
-                (this._customerContactNumber = value);
+            get
+            {
+                return this._customerContactNumber;
+            }
+            set
+            {
+                this._customerContactNumber = value;
+            }
         }
 
         public string CustomerContactAddress
         {
-            get => 
-                this._customerContactAddress;
-            set => 
-                (this._customerContactAddress = value);
+            get
+            {
+                return this._customerContactAddress;
+            }
+            set
+            {
+                this._customerContactAddress = value;
+            }
         }
 
         public string BussinessType
         {
-            get => 
-                this._bussinessType;
-            set => 
-                (this._bussinessType = value);
+            get
+            {
+                return this._bussinessType;
+            }
+            set
+            {
+                this._bussinessType = value;
+            }
         }
 
         public string RegisterPoint
         {
-            get => 
-                this._registerPoint;
-            set => 
-                (this._registerPoint = value);
+            get
+            {
+                return this._registerPoint;
+            }
+            set
+            {
+                this._registerPoint = value;
+            }
         }
 
         public string Specification
         {
-            get => 
-                this._specification;
-            set => 
-                (this._specification = value);
+            get
+            {
+                return this._specification;
+            }
+            set
+            {
+                this._specification = value;
+            }
         }
 
         public string Brand
         {
-            get => 
-                this._brand;
-            set => 
-                (this._brand = value);
+            get
+            {
+                return this._brand;
+            }
+            set
+            {
+                this._brand = value;
+            }
         }
     }
 }

@@ -9,8 +9,13 @@
     {
         private static Settings defaultInstance = ((Settings) SettingsBase.Synchronized(new Settings()));
 
-        public static Settings Default =>
-            defaultInstance;
+        public static Settings Default
+        {
+            get
+            {
+                return defaultInstance;
+            }
+        }
     }
 }
 

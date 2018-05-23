@@ -16,74 +16,110 @@
 
         public string SymbolLevel
         {
-            get => 
-                this._symbolLevel;
-            set => 
-                (this._symbolLevel = value);
+            get
+            {
+                return this._symbolLevel;
+            }
+            set
+            {
+                this._symbolLevel = value;
+            }
         }
 
         public string DecodingData
         {
-            get => 
-                this._decodingData.Replace(" ", "");
-            set => 
-                (this._decodingData = value);
+            get
+            {
+                return this._decodingData.Replace(" ", "");
+            }
+            set
+            {
+                this._decodingData = value;
+            }
         }
 
         public string LeftBlank
         {
-            get => 
-                this._leftBlank;
-            set => 
-                (this._leftBlank = value);
+            get
+            {
+                return this._leftBlank;
+            }
+            set
+            {
+                this._leftBlank = value;
+            }
         }
 
         public string RightBlank
         {
-            get => 
-                this._rightBlank;
-            set => 
-                (this._rightBlank = value);
+            get
+            {
+                return this._rightBlank;
+            }
+            set
+            {
+                this._rightBlank = value;
+            }
         }
 
         public int BarHeight
         {
-            get => 
-                this._barHeight;
-            set => 
-                (this._barHeight = value);
+            get
+            {
+                return this._barHeight;
+            }
+            set
+            {
+                this._barHeight = value;
+            }
         }
 
         public string SizeOfZ
         {
-            get => 
-                this._sizeOfZ;
-            set => 
-                (this._sizeOfZ = value);
+            get
+            {
+                return this._sizeOfZ;
+            }
+            set
+            {
+                this._sizeOfZ = value;
+            }
         }
 
         public string IsValidBarcode
         {
-            get => 
-                this._isValidBarcode;
-            set => 
-                (this._isValidBarcode = value);
+            get
+            {
+                return this._isValidBarcode;
+            }
+            set
+            {
+                this._isValidBarcode = value;
+            }
         }
 
         public DateTime TestDate
         {
-            get => 
-                this._testDate;
-            set => 
-                (this._testDate = value);
+            get
+            {
+                return this._testDate;
+            }
+            set
+            {
+                this._testDate = value;
+            }
         }
 
         public string BarcodeType
         {
-            get => 
-                this._barcodeType;
-            set => 
-                (this._barcodeType = value);
+            get
+            {
+                return this._barcodeType;
+            }
+            set
+            {
+                this._barcodeType = value;
+            }
         }
     }
 }
