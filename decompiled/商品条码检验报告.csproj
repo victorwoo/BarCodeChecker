@@ -39,16 +39,25 @@
     <Reference Include="Microsoft.Office.Interop.Excel" />
     <Reference Include="GoldPrinter" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="商品条码检验报告\frmHis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品条码检验报告\frmHis.Designer.cs">
+      <DependentUpon>frmHis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="商品条码检验报告\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="商品条码检验报告\frmPrint.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品条码检验报告\frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConn.cs" />
     <Compile Include="商品条码检验报告\SqlHelper.cs" />
     <Compile Include="商品条码检验报告\DataReadHelper.cs" />
-    <Compile Include="商品条码检验报告\frmHis.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="商品条码检验报告\Properties\Settings.cs" />
     <Compile Include="商品条码检验报告\Program.cs" />
     <Compile Include="商品条码检验报告\frmMain.cs">
